@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+.container .header {
+  width: 100%;
+  height: 800px;
+}
+.container .header .header__background {
+  width: 100%;
+  position: absolute;
+  height: inherit;
+  z-index: -1;
+}
+.container .header .header__background .background__top {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background: linear-gradient(180deg, #0c67ae 0%, rgba(27, 98, 153, 0) 100%);
+}
+.container .header .header__background .image {
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  background-image: url("/img/header_bg.png");
+  background-color: #1987ec;
+  background-blend-mode: luminosity;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  z-index: -1;
+}
+.container .header .header__background .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.container .header .header__background .content .left {
+  width: 100%;
+  background-image: url(/img/header_bg_left.png);
+  background-repeat: no-repeat;
+}
+.container .header .header__background .content .right {
+  width: 100%;
+  background-image: url(/img/header_bg_right.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.container .header .header__menu {
+  max-width: 1280px;
+  height: 71px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.container .header .header__menu .header__menu__list {
+  display: flex;
+  align-items: center;
+}
+.container .header .header__menu .header__menu__list .header__menu__container {
+  display: flex;
+  list-style-type: none;
+  gap: 38px;
+}
+.container .header .header__menu .header__menu__contacts {
+  display: flex;
+  align-items: center;
+}
+.container .header .header__menu .header__menu__contacts .header__menu__container {
+  display: flex;
+  gap: 70px;
+}
+.container .header .header__menu .header__menu__contacts .header__menu__container .menu__contacts__phone {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.container .header .header__menu .header__menu__contacts .header__menu__container .menu__contacts__phone .contacts__phone__image {
+  width: 23px;
+  height: 23px;
+}
+.container .header .header__menu .header__menu__contacts .header__menu__container .menu__contacts__city {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}/*# sourceMappingURL=style.css.map */
