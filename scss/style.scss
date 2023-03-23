@@ -98,6 +98,10 @@
       }
     }
 
+    .header__menu__mobile {
+      display: none;
+    }
+
     .header__menu__wrapper {
       display: flex;
       width: 100%;
@@ -106,10 +110,10 @@
 
       .header__menu {
         width: 1280px;
-        min-width: 500px;
         height: 71px;
         margin-top: 20px;
         display: flex;
+        align-items: center;
         justify-content: space-between;
 
         .header__menu__list {
@@ -339,6 +343,10 @@
     }
   }
 
+  .bottom {
+    display: none;
+  }
+
   .services {
     display: flex;
     justify-content: center;
@@ -414,18 +422,22 @@
       .services__wrapper__block:nth-child(1) {
         background-image: url("/img/services_bg1.png");
         background-position: right;
+        background-size: contain;
       }
 
       .services__wrapper__block:nth-child(2) {
         background-image: url("/img/services_bg2.png");
+        background-size: contain;
       }
 
       .services__wrapper__block:nth-child(3) {
         background-image: url("/img/services_bg3.png");
+        background-size: contain;
       }
 
       .services__wrapper__block:nth-child(4) {
         background-image: url("/img/services_bg4.png");
+        background-size: contain;
         .block__subhead__text {
           width: 150px;
         }
@@ -433,6 +445,7 @@
 
       .services__wrapper__block:nth-child(5) {
         background-image: url("/img/services_bg5.png");
+        background-size: contain;
         .block__subhead__text {
           width: 150px;
         }
@@ -440,6 +453,7 @@
 
       .services__wrapper__block:nth-child(6) {
         background-image: url("/img/services_bg6.png");
+        background-size: contain;
         .block__subhead__text {
           width: 150px;
         }
@@ -468,9 +482,12 @@
       flex-wrap: wrap;
       gap: 40px;
       margin-top: 33px;
+      width: 100%;
       max-width: 1300px;
 
       .feedback__block {
+        display: flex;
+        flex-direction: column;
         width: 400px;
         height: 417px;
         background: #ffffff;
@@ -517,6 +534,10 @@
               line-height: 26px;
             }
           }
+        }
+
+        feedback__block__mobile {
+          display: none;
         }
 
         .feedback__block__subhead {
@@ -634,26 +655,38 @@
 
           .feedback__videos__block:nth-child(1) {
             background-image: url("/img/video_image1.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
           }
 
           .feedback__videos__block:nth-child(2) {
             background-image: url("/img/video_image2.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
           }
 
           .feedback__videos__block:nth-child(3) {
             background-image: url("/img/video_image3.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
           }
 
           .feedback__videos__block:nth-child(4) {
             background-image: url("/img/video_image1.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
           }
 
           .feedback__videos__block:nth-child(5) {
             background-image: url("/img/video_image2.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
           }
 
           .feedback__videos__block:nth-child(6) {
             background-image: url("/img/video_image3.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
           }
         }
 
@@ -695,6 +728,7 @@
       height: inherit;
       background-image: url("/img/request_left.png");
       background-repeat: no-repeat;
+      background-size: contain;
     }
 
     .request__bg__right {
@@ -704,6 +738,7 @@
       height: inherit;
       background-image: url("/img/request_right.png");
       background-repeat: no-repeat;
+      background-size: contain;
       background-position: right;
     }
 
@@ -1114,7 +1149,7 @@
           }
         }
 
-        .content__form__button {
+        .content__form__button-js {
           button {
             width: 246px;
             height: 47px;
@@ -1213,7 +1248,7 @@
 
     .footer__wrapper {
       width: 1280px;
-      height: 320px;
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -1229,7 +1264,7 @@
           .uphead__media__social {
             margin-top: 51px;
             display: flex;
-            gap: 30px;
+            justify-content: space-around;
             transition: 0.4s ease;
 
             .media__social {
