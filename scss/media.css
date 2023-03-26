@@ -24,6 +24,98 @@
     color: #1277d3;
     cursor: pointer;
   }
+  .container .b-modal__menu__container {
+    transform: translateX(-100%);
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: transform 0.5s;
+    z-index: 2;
+  }
+  .container .b-modal__menu__container .modal__menu__close-btn-js {
+    position: absolute;
+    right: 0;
+    margin: 16px 20px 0px 0px;
+  }
+  .container .b-modal__menu__container .modal__menu__city {
+    display: flex;
+    align-items: center;
+    margin: 23px 0 0 20px;
+    gap: 10px;
+  }
+  .container .b-modal__menu__container .modal__menu__city .menu__city__inner {
+    display: flex;
+    gap: 30px;
+  }
+  .container .b-modal__menu__container .modal__menu__city .menu__city__inner .menu__city__text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+  }
+  .container .b-modal__menu__container .modal__menu__city .menu__city__inner .menu__city__arrow {
+    display: flex;
+    align-items: center;
+  }
+  .container .b-modal__menu__container .modal__menu {
+    margin: 35px 0 0 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .container .b-modal__menu__container .modal__menu .modal__menu__content {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    list-style-type: none;
+  }
+  .container .b-modal__menu__container .modal__menu .modal__menu__content .modal__menu__content__text {
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    border-right: none;
+  }
+  .container .b-modal__menu__container .modal__menu .modal__menu__content .modal__menu__content__text .modal__menu__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 46px;
+    color: #000000;
+  }
+  .container .b-modal__menu__container .modal__menu .modal__menu__content .modal__menu__content__text .modal__menu__text:active:focus {
+    color: #1277d3;
+  }
+  .container .b-modal__menu__container .modal__menu .modal__menu__content .modal__menu__content__text:nth-child(1) {
+    border: none;
+  }
+  .container .b-modal__menu__container .modal__menu .modal__menu__content .modal__menu__content__text:nth-child(3) {
+    border-top: none;
+  }
+  .container .b-modal__menu__container .modal__menu .modal__menu__content .modal__menu__content__text:nth-child(4) {
+    border: none;
+  }
+  .container .b-modal__menu__container .modal__menu .modal__menu__content .modal__menu__content__contacts {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  .container .b-modal__menu__container .modal__menu .modal__menu__content .modal__menu__content__contacts p {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .container .b-modal__menu__container.active {
+    transform: translateX(0%);
+  }
+  .container body.active {
+    overflow-y: hidden;
+  }
   .container .header {
     height: 565px;
   }
@@ -32,9 +124,9 @@
   }
   .container .header .header__menu__wrapper .header__menu {
     width: 100%;
-    min-width: none;
-    justify-content: center;
-    gap: 50px;
+    min-width: 0;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
   }
   .container .header .header__menu__wrapper .header__menu .header__menu__button {
     display: flex;

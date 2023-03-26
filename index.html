@@ -16,6 +16,52 @@
   </head>
   <body>
     <div class="container">
+      <div class="b-modal__menu__container">
+        <div class="modal__menu__close-btn modal__menu__close-btn-js">
+          <img src="./img/menu_close_btn.svg" alt="close" />
+        </div>
+        <div class="modal__menu__city">
+          <div class="menu__city__image">
+            <img src="./img/city_modal.svg" alt="" />
+          </div>
+          <div class="menu__city__inner">
+            <div class="menu__city__text">
+              <p>Москва</p>
+            </div>
+            <div class="menu__city__arrow">
+              <svg
+                width="7"
+                height="5"
+                viewBox="0 0 7 5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3.70588 5L0 0H3.70588H7L3.70588 5Z" fill="black" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="modal__menu">
+          <ul class="modal__menu__content">
+            <li class="modal__menu__content__text">
+              <p class="modal__menu__text">Услуги</p>
+            </li>
+            <li class="modal__menu__content__text">
+              <p class="modal__menu__text">О нас</p>
+            </li>
+            <li class="modal__menu__content__text">
+              <p class="modal__menu__text">Отзывы и практика</p>
+            </li>
+            <li class="modal__menu__content__text">
+              <p class="modal__menu__text">Контакты</p>
+            </li>
+            <li class="modal__menu__content__contacts">
+              <img src="./img/whatsapp.svg" alt="" />
+              <p class="modal__menu__text">8 800 222 26 94</p>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="header">
         <div class="header__payment">
           <div class="header__payment__text"><p>₽</p></div>
@@ -31,7 +77,7 @@
         </div>
         <div class="header__menu__mobile">
           <div class="header__menu__mobile__wrapper">
-            <div class="menu__mobile__button">
+            <div class="menu__mobile__button button-js">
               <span></span>
               <span></span>
               <span></span>
@@ -48,7 +94,7 @@
         </div>
         <div class="header__menu__wrapper">
           <div class="header__menu">
-            <div class="header__menu__button">
+            <div class="header__menu__button button-js">
               <span></span>
               <span></span>
               <span></span>
@@ -1103,5 +1149,6 @@
         </div>
       </div>
     </div>
+    <script src="./js/button.js"></script>
   </body>
 </html>

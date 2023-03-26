@@ -11,8 +11,11 @@
 
 .container {
   width: 100%;
-
   font-family: "Montserrat", "Manrope", font-family;
+
+  .b-modal__menu__container {
+    display: none;
+  }
 
   .header {
     width: 100%;
