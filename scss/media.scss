@@ -1,6 +1,18 @@
 @media (max-width: 1160px) {
   .container {
-    .header {
+    .menu__fixed-js {
+      .header__menu__fixed__wrapper {
+        .header__menu__fixed {
+          .header__menu__fixed__list {
+            .header__menu__wrapper {
+              gap: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .b-header {
       .header__menu__wrapper {
         .header__menu {
           .header__menu__list {
@@ -18,7 +30,7 @@
       }
     }
 
-    .footer {
+    .b-footer {
       .footer__wrapper {
         .footer__uphead__inner {
           .footer__uphead__list {
@@ -32,7 +44,7 @@
 
 @media (max-width: 1060px) {
   .container {
-    .header {
+    .b-header {
       .header__menu__wrapper {
         .header__menu {
           .header__menu__contacts {
@@ -44,7 +56,7 @@
       }
     }
 
-    .mission {
+    .b-mission {
       .mission__wrapper {
         .mission__content {
           .mission__inner {
@@ -64,6 +76,10 @@
   }
 
   .container {
+    .menu__fixed-js {
+      display: none;
+    }
+
     .b-modal__menu__container {
       transform: translateX(-100%);
       display: block;
@@ -109,7 +125,7 @@
         justify-content: flex-start;
 
         .modal__menu__content {
-          width: 230px;
+          width: 300px;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -130,8 +146,24 @@
               color: #000000;
             }
 
-            .modal__menu__text:active:focus {
+            .modal__menu__text:active {
               color: #1277d3;
+            }
+
+            .modal__menu__inner__list {
+              display: none;
+              flex-direction: column;
+              gap: 10px;
+              list-style-type: none;
+              margin-bottom: 10px;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 36px;
+              transition: 0.4s ease;
+            }
+
+            .modal__menu__inner__list.list__show {
+              display: flex;
             }
           }
 
@@ -174,7 +206,7 @@
       overflow-y: hidden;
     }
 
-    .header {
+    .b-header {
       height: 565px;
 
       .header__payment {
@@ -262,7 +294,7 @@
         }
       }
     }
-    .bottom {
+    .b-bottom {
       width: 100%;
       height: 443px;
       display: block;
@@ -388,7 +420,7 @@
         }
       }
     }
-    .services {
+    .b-services {
       margin-top: 39px;
       padding: 0;
 
@@ -420,7 +452,7 @@
         }
       }
     }
-    .feedback {
+    .b-feedback {
       margin-top: 30px;
       padding: 0 25px 0;
 
@@ -472,7 +504,7 @@
         }
       }
     }
-    .request {
+    .b-request {
       .request__bg__left {
         width: 100%;
       }
@@ -521,7 +553,7 @@
         }
       }
     }
-    .сases {
+    .b-сases {
       margin-top: 62px;
 
       .сases__header {
@@ -557,7 +589,7 @@
         }
       }
     }
-    .mission {
+    .b-mission {
       width: 100%;
       .mission__wrapper {
         border-radius: 0;
@@ -589,7 +621,7 @@
         }
       }
     }
-    .map {
+    .b-map {
       margin-top: 49px;
 
       .map__header {
@@ -602,7 +634,7 @@
         margin-top: 23px;
       }
     }
-    .call {
+    .b-call {
       height: 487px;
 
       .call__content {
@@ -643,7 +675,7 @@
       }
     }
 
-    .footer {
+    .b-footer {
       height: 305px;
       .footer__wrapper {
         .footer__uphead__inner {
@@ -675,7 +707,7 @@
 
 @media (max-width: 740px) {
   .container {
-    .feedback {
+    .b-feedback {
       .feedback__videos {
         .feedback__videos__container {
           .feedback__videos__image:first-child {
@@ -692,7 +724,7 @@
 
 @media (max-width: 710px) {
   .container {
-    .header {
+    .b-header {
       .header__menu__mobile {
         display: flex;
         justify-content: center;
@@ -780,7 +812,7 @@
 
 @media (max-width: 670px) {
   .container {
-    .feedback {
+    .b-feedback {
       .feedback__wrapper {
         .feedback__block {
         }
@@ -801,7 +833,7 @@
 
 @media (max-width: 660px) {
   .container {
-    .request {
+    .b-request {
       .request__info {
         .request__wrapper {
           .request__info__image {
@@ -811,7 +843,7 @@
       }
     }
 
-    .footer {
+    .b-footer {
       height: 457px;
       .footer__wrapper {
         justify-content: flex-start;
@@ -854,7 +886,7 @@
 
 @media (max-width: 580px) {
   .container {
-    .mission {
+    .b-mission {
       .mission__wrapper {
         height: 438px;
 
@@ -905,7 +937,7 @@
       }
     }
 
-    .call {
+    .b-call {
       height: 556px;
 
       .call__bg {
@@ -964,7 +996,7 @@
 
 @media (max-width: 500px) {
   .container {
-    .header {
+    .b-header {
       height: 451px;
 
       .header__background {
@@ -1090,7 +1122,7 @@
         }
       }
     }
-    .feedback {
+    .b-feedback {
       .feedback__videos {
         .feedback__videos__container {
           flex-direction: column;
@@ -1110,7 +1142,7 @@
 
 @media (max-width: 440px) {
   .container {
-    .services {
+    .b-services {
       margin-top: 51px;
 
       .services__header {
@@ -1151,7 +1183,7 @@
       }
     }
 
-    .feedback {
+    .b-feedback {
       .feedback__videos {
         margin-top: 49px;
         .feedback__videos__container {
@@ -1180,7 +1212,7 @@
       }
     }
 
-    .сases {
+    .b-сases {
       margin-top: 49px;
       .сases__header {
         max-width: 300px;
@@ -1205,7 +1237,7 @@
 
 @media (max-width: 400px) {
   .container {
-    .mission {
+    .b-mission {
       .mission__wrapper {
         .mission__content {
           .mission__inner {
@@ -1217,9 +1249,31 @@
   }
 }
 
+@media (max-width: 380px) {
+  .container {
+    .b-header {
+      .header__menu__wrapper {
+        .header__menu {
+          padding: 0 20px 0 20px;
+
+          .header__menu__contacts {
+            .header__menu__contacts__wrapper {
+              .menu__contacts__city {
+                .contacts__city__inner {
+                  gap: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 340px) {
   .container {
-    .bottom {
+    .b-bottom {
       height: 425px;
 
       .bottom__form {
@@ -1254,7 +1308,7 @@
       }
     }
 
-    .feedback {
+    .b-feedback {
       margin-top: 16px;
       .feedback__header {
         h2 {
@@ -1340,7 +1394,7 @@
       }
     }
 
-    .request {
+    .b-request {
       .request__info {
         margin-top: 44px;
         height: 300px;
@@ -1379,7 +1433,7 @@
       }
     }
 
-    .mission {
+    .b-mission {
       .mission__wrapper {
         height: 438px;
 
@@ -1429,7 +1483,7 @@
       }
     }
 
-    .map {
+    .b-map {
       margin-top: 29px;
 
       .map__header {
@@ -1445,7 +1499,7 @@
       }
     }
 
-    .call {
+    .b-call {
       height: 556px;
 
       .call__bg {
