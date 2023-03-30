@@ -596,6 +596,12 @@
   background: #3a87d4;
   background-repeat: no-repeat;
 }
+.container .b-services .services__wrapper .services__wrapper__block a {
+  display: block;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
 .container .b-services .services__wrapper .services__wrapper__block .wrapper__block__image {
   margin: 30px 0 0 46px;
 }
